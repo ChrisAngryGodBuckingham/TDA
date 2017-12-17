@@ -20,7 +20,7 @@ Character Improvment(Skill) System<br>
 **************
 <br>
 Survival      -Solo<br>
-              -Co-Op<br>
+                       -Co-Op<br>
 DeathMatch    -Lastman Standing<br>
               -Team <br>
 Domination    -Small 3 control points<br>
