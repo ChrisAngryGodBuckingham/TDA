@@ -1,31 +1,31 @@
 # TDA
-TheDaysAfter - Survival Conflict
+TheDaysAfter - Survival Conflict<br>
 
-Repository of files for the days after survival conflict.  A FP/3P survival horror, FPS, Action, RPG by M.A.G. Studios Canada.
+Repository of files for the days after survival conflict.<br>  A FP/3P survival horror, FPS, Action, RPG<br> by M.A.G. Studios Canada.
 
 *****************
 **Main Features**
 *****************
-
+<br>
 Menu System <br>
-Inventory System
-Clothing System
-Time System
-Weather System
-Character Improvment(Skill) System
+Inventory System<br>
+Clothing System<br>
+Time System<br>
+Weather System<br>
+Character Improvment(Skill) System<br>
 
 
 **************
 **GAME MODES**
 **************
-
-Survival      -Solo
-              -Co-Op
-DeathMatch    -Lastman Standing
-              -Team 
-Domination    -Small 3 control points
-              -Medium 5 control points
-              -Large 7 control points
-Zombie        -Solo
-              -Co-Op
-              -Adversarial 
+<br>
+Survival      -Solo<br>
+              -Co-Op<br>
+DeathMatch    -Lastman Standing<br>
+              -Team <br>
+Domination    -Small 3 control points<br>
+              -Medium 5 control points<br>
+              -Large 7 control points<br>
+Zombie        -Solo<br>
+              -Co-Op<br>
+              -Adversarial <br>
