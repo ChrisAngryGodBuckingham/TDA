@@ -21,11 +21,11 @@ Character Improvment(Skill) System<br>
 <br>
 Survival-------Solo<br>
 ---------------Co-Op<br>
-DeathMatch-----Lastman Standing<br>
+DeathMatch--Lastman Standing<br>
 ---------------Team <br>
-Domination-----Small 3 control points<br>
+Domination--Small 3 control points<br>
 ---------------Medium 5 control points<br>
 ---------------Large 7 control points<br>
-Zombie---------Solo<br>
+Zombie------Solo<br>
 ---------------Co-Op<br>
 ---------------Adversarial <br>
