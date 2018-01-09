@@ -28,13 +28,17 @@ protected:
 	
 	UPROPERTY(Editanywhere, BlueprintReadWrite)
 	FName ItemID;
+
 	UPROPERTY(Editanywhere, BlueprintReadWrite)
 	bool IsClothing;
+	
 	UPROPERTY(Editanywhere, BlueprintReadWrite)
 	bool IsWeapon;
+	
 	UPROPERTY(Editanywhere, BlueprintReadWrite)
 	int32 XPValue;
 
-	
+	UPROPERTY(Editanywhere, BlueprintReadWrite)
+	int32 Value;
 	
 };

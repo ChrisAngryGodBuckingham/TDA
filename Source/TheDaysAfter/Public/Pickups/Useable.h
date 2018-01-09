@@ -17,7 +17,7 @@ public:
 
 
 	// Called when player triggers Useable allows designers to use custom pickup via BPs
-	UFUNCTION(BlueprintImplementableEvent)
+	UFUNCTION(BlueprintImplementableEvent, Category = "Usable")
 		void Useable(APlayerController* Controller);  
 
 	// set propertext for pickups
@@ -26,7 +26,7 @@ public:
 	UPROPERTY(EditDefaultsOnly)
 		FString Action;
 	
-	UFUNCTION(BlueprintCallable, Category = "Useable")
+	UFUNCTION(BlueprintCallable, Category = "Usable")
 		FString GetUseText() const { return FString::Printf(TEXT("%s : Press E tp %s"), *Name, *Action); }
 
 
