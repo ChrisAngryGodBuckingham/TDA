@@ -19,11 +19,14 @@ class THEDAYSAFTER_API ATDA_GamePlay : public AGameMode
 public:
 
 		class UDataTable* GetItem_DB() const { return Item_DB; }
+		
 
 protected:
 
 	UPROPERTY(EditDefaultsOnly)
 		class UDataTable* Item_DB;
+
+	
 	
 	
 	
