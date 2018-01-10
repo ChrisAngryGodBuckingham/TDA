@@ -10,8 +10,8 @@ public class TheDaysAfter : ModuleRules
             {
                 "TheDaysAfter/Private",
                 "TheDaysAfter/Public",
-           //     "TheDaysAfter/TDA_Menu/Menu/Public",
-           //     "TheDaysAfter/TDA_Menu/Menu/Private"
+           //     "TheDaysAfter/TDA_Menu/Menu/Public",  //these are removed until ready for the main menu to fire in editor each time we test.
+           //     "TheDaysAfter/TDA_Menu/Menu/Private"  //May only need to point to TheDaysAfter/TDA_Menu and not the public/private folders
             }
         );
 
@@ -19,16 +19,16 @@ public class TheDaysAfter : ModuleRules
 
 		PublicDependencyModuleNames.AddRange(new string[] 
             {
-				"AIModule",
-				"AdvancedSessions",
+		"AIModule",
+		"AdvancedSessions",
                 "Core",
                 "CoreUObject",
                 "Engine",
-				"GameplayTasks",
+		"GameplayTasks",
                 "HeadMountedDisplay",
                 "InputCore",
                 "MoviePlayer",
-				"Networking",
+		"Networking",
                 "OnlineSubsystem",
                 "OnlineSubsystemUtils",     
                 "OnlineSubsystemSteam",
