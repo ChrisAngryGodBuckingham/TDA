@@ -7,6 +7,7 @@
 #include "Engine/TargetPoint.h"
 #include "Engine/DataTable.h"
 #include "CoreMinimal.h"
+#include "Net/UnrealNetwork.h" 
 #include "GameFramework/Actor.h"
 #include "GameFramework/GameMode.h"
 #include "GameFramework/GameModeBase.h"

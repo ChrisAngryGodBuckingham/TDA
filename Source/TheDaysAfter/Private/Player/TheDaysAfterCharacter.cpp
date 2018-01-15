@@ -40,7 +40,7 @@ ATheDaysAfterCharacter::ATheDaysAfterCharacter()
 	// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
-	FollowCamera->RelativeLocation = FVector(39.56f, 1.75f, 64.f); // Position the camera
+	FollowCamera->RelativeLocation = FVector(300.0f, 1.75f, 64.f); // Position the camera
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
@@ -50,7 +50,7 @@ ATheDaysAfterCharacter::ATheDaysAfterCharacter()
 	// Create a First PersonCameraComponent	
 	FirstPersonCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
 	FirstPersonCamera->SetupAttachment(GetCapsuleComponent());
-	FirstPersonCamera->RelativeLocation = FVector(300.0f, 1.75f, 64.f); // Position the camera
+	FirstPersonCamera->RelativeLocation = FVector(39.56f, 1.75f, 64.f); // Position the camera
 	FirstPersonCamera->bUsePawnControlRotation = true;
 
 	TopMesh = CreateDefaultSubobject<USkeletalMeshComponent>(FName("TopMesh"));
@@ -64,7 +64,7 @@ ATheDaysAfterCharacter::ATheDaysAfterCharacter()
 	
 
 	// Create a mesh component that will be used when being viewed from a '1st person' view (when controlling this pawn)
-	Mesh1P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh1P"));
+	Mesh1P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Mesh1P"));
 	Mesh1P->SetOnlyOwnerSee(true);
 	Mesh1P->SetupAttachment(FirstPersonCamera);
 	Mesh1P->bCastDynamicShadow = false;
@@ -102,7 +102,7 @@ void ATheDaysAfterCharacter::SetupPlayerInputComponent(class UInputComponent* Pl
 	check(PlayerInputComponent);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
-	//PlayerInputComponent->BindAction("Use", IE_Pressed, this, &ATheDaysAfterCharacter::Use);
+	// PlayerInputComponent->BindAction("Use", IE_Pressed, this, &ATheDaysAfterCharacter::Use);
 	PlayerInputComponent->BindAxis("MoveForward", this, &ATheDaysAfterCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ATheDaysAfterCharacter::MoveRight);
 
@@ -122,11 +122,21 @@ void ATheDaysAfterCharacter::SetupPlayerInputComponent(class UInputComponent* Pl
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ATheDaysAfterCharacter::OnResetVR);
 	
 	// On Fire
-	//PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ATheDaysAfterCharacter::OnFire);
+	// PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ATheDaysAfterCharacter::OnFire);
 
 
 }
+/*
+void ATheDaysAfterCharacter::OnFire()
+{
+	
+}
 
+void ATheDaysAfterCharacter::Use()
+{
+
+}
+*/
 void ATheDaysAfterCharacter::BeginPlay()
 {
 		Super::BeginPlay();

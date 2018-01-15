@@ -29,3 +29,6 @@ Domination--Small 3 control points<br>
 Zombie------Solo<br>
 ---------------Co-Op<br>
 ---------------Adversarial <br>
+
+UPDATE January 9th 2018
+All code matches current in use code.

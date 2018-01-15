@@ -34,6 +34,9 @@ public:
 	FName ProductID;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 XP_Value;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool bDestroyComponentA;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -50,10 +53,12 @@ public:
 
 	FInventoryItem()
 	{
+		
 		Name = FText::FromString("Item");
 		Action = FText::FromString("Use");
 		Description = FText::FromString("Description");
 		Value = 10;
+		XP_Value = 10;
 	}
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -72,6 +77,9 @@ public:
 	int32 Value;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 XP_Value;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UTexture2D* Thumbnail;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -82,6 +90,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool bCanBeUsed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool bIsClothing;
 
 	bool operator==(const FInventoryItem& Item) const
 	{
@@ -180,7 +191,7 @@ protected:
 	void TouchStopped(ETouchIndex::Type FingerIndex, FVector Location);
 
 	// APawn interface
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)  override; 
 	// End of APawn interface
 
 	
